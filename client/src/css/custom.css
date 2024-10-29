@@ -1,0 +1,104 @@
+.custem-img-box img{
+    transform: scale(0.8);
+    animation: zoomOut 0.5s ease backwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(0.8);
+    }
+}
+.custem-img-box:hover img {
+    animation: zoomIn 0.5s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(0.9);
+    }
+}
+
+.customcart{
+    color: white;
+}
+.customcart:hover{
+    color:#ffc107;
+}
+.customcart_menu{
+    color: white
+}
+.customcart_menu:hover{
+    animation: zoomIncart 0.5s ease forwards;
+    color: white;
+
+}
+
+@keyframes zoomIncart {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.custombg{
+     background-color: white;
+     padding-top: 20px;
+}
+.dropbtn-custom {
+    background-color: #ffffff00;
+    color: white;
+}
+
+.dropdown-custom {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content-icon-custom{
+    margin-right: 20px;
+}
+.dropdown-content-custom {
+    display: none;
+    position: absolute;
+    background-color: #111111;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content-custom a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-custom a:hover {
+    color: #ffbe33;
+}
+
+.dropdown-custom:hover .dropdown-content-custom {
+    display: block;
+}
+
+.xxx{
+    color: white;
+}
+@media (max-width: 992px) {
+
+    .hide_area_navbar {
+        display: none;
+    }
+}
